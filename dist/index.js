@@ -4161,6 +4161,8 @@ core.debug(`team_slug: ${team_slug}`)
 
 async function main() {
   try {
+    const teams = await octokit.teams.list({ org })
+    console.log(teams)
     const res = await octokit.teams.listMembersInOrg({ org, team_slug })
 
     const usersInTeam = res.data.map(user => user.login)
