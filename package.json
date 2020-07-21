@@ -6,6 +6,11 @@
   "scripts": {
     "build": "ncc build src/index.js"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/auderer/approvals.git"
@@ -22,6 +27,7 @@
     "@actions/github": "^4.0.0"
   },
   "devDependencies": {
-    "@zeit/ncc": "^0.22.3"
+    "@zeit/ncc": "^0.22.3",
+    "husky": "^4.2.5"
   }
 }
