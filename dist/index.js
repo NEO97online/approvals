@@ -4147,7 +4147,7 @@ module.exports = require("util");
 const core = __webpack_require__(470)
 const github = __webpack_require__(469)
 
-const octokit = new github.getOctokit(process.env.GITHUB_TOKEN)
+const octokit = github.getOctokit(process.env.GITHUB_TOKEN)
 
 const actor = github.context.actor
 const org = github.context.repository_owner
