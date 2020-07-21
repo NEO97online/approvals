@@ -6,7 +6,7 @@ const octokit = github.getOctokit(process.env.GITHUB_TOKEN)
 console.log(github.context)
 
 const actor = github.context.actor
-const org = github.context.repositoryOwner
+const org = github.context.payload.organization.login
 const team_slug = core.getInput('team')
 
 core.debug(`actor: ${actor}`)
