@@ -14,7 +14,7 @@ async function main() {
     const usersInTeam = res.data.map(user => user.login)
     
     if (!usersInTeam.includes(actor)) {
-      core.setFailed(`User ${actor} is NOT in team ${team_slug}`)
+      core.setFailed(`Approvals failed: user ${actor} is NOT in team ${team_slug}`)
     }
   } catch (err) {
     core.setFailed(err.message)
