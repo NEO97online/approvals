@@ -1,0 +1,13 @@
+name: Approvals
+author: "Michael Auderer <mike@silverstone.io>"
+description: Require approvals from users or teams before continuing a workflow
+inputs:
+  team:
+    description: The name of the team which can approve this workflow
+    required: true
+runs:
+  using: "node12"
+  main: "index.js"
+branding:
+  icon: "user-check"
+  color: "green"

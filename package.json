@@ -1,0 +1,27 @@
+{
+  "name": "approvals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "ncc build src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auderer/approvals.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/auderer/approvals/issues"
+  },
+  "homepage": "https://github.com/auderer/approvals#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "@zeit/ncc": "^0.22.3"
+  }
+}
